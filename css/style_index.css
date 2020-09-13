@@ -1,8 +1,3 @@
-#headmenu{
-	
-}
-
-
 #headmenu>a{
 	padding: 30px;
 	font-size: 48px;
@@ -18,13 +13,6 @@ header{
 	align-items: center;
 	justify-content: space-between;
 }
-
-/*#search {background: #7BA7AB;}*/
-/*#search:after {
-	content:"";
-	clear:both;
-	display:table
-}*/
 
 input::-webkit-input-placeholder {
   color: #ff5733; 
@@ -61,30 +49,7 @@ input {
 	border: 2px solid #ffffff;
 	background: #53110c;
 	outline: none;
-  /*position: relative;*/
-  /*transition: .3s linear;*/
 }
-/*
-#search input:focus {
-  width: 300px;
-}
-*//*
-#search>div {
-  width: 42px;
-  height: 42px;
-  background: none;
-  border: none;
-  position: absolute;
-  top: -2px;
-  right: 0;
-}*/
-/*
-#search button:before{
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
-}
-*/
 
 
 #background{
@@ -216,7 +181,6 @@ input {
 
 .scroll{
 	height: 360px;
-	/*width: 100%;*/
 	overflow-x: hidden;
 	background: #fff;
 	border: #C1C1C1;
