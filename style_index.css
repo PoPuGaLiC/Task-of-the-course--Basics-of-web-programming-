@@ -1,0 +1,158 @@
+#headmenu{
+	
+}
+
+
+#headmenu>a{
+	padding: 30px;
+	font-size: 48px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+header{
+	background-color: #53110c;
+	padding: 10px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*#search {background: #7BA7AB;}*/
+/*#search:after {
+	content:"";
+	clear:both;
+	display:table
+}*/
+
+input::-webkit-input-placeholder {
+  color: #ff5733; 
+  font-style: italic;
+}
+
+input {
+  color: white;
+}
+
+
+
+
+#search form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+
+#search input {
+  width: 300px;
+  height: 35px;
+  padding-left: 15px;
+  border-radius: 40px;
+  border: 2px solid #ffffff;
+  background: #53110c;
+  outline: none;
+  /*position: relative;*/
+  /*transition: .3s linear;*/
+}
+/*
+#search input:focus {
+  width: 300px;
+}
+*/
+#search>div {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+/*
+#search button:before{
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+*/
+
+
+#background{
+	width: auto;
+	height: 953px;
+	display:block;
+	margin:auto;
+	background-image: url(./image_0.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+}
+
+#main_bottom{
+	cursor: pointer;
+	width: 380px;
+	height: 60px;
+	background-color: #530f09;
+	border-radius: 6px;
+	display:block;
+	margin:auto;
+	text-align: center;
+}
+
+#main_bottom>h2{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+#icon{
+	display:block; margin:auto;
+	filter: invert(100%)
+		drop-shadow(3px 3px 0 #530f09) 
+		drop-shadow(-3px -3px 0 #530f09)
+		drop-shadow(3px -3px 0 #530f09)
+		drop-shadow(-3px 3px 0 #530f09);
+}
+
+#filter_hotels{
+	background-color: #530f09;
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr 3fr;
+	justify-items: center;
+	align-items: center;
+}
+
+#filter_hotels input{
+	width: 230px;
+	height: 42px;
+	padding-left: 15px;
+	border-radius: 6px;
+	border: none;
+	outline: none;
+	color: black;
+	margin: 15px 20px;
+}
+
+#check_bottom{
+	cursor: pointer;
+	width: 320px;
+	height: 42px;
+	background-color: #ff5b2f;
+	border-radius: 6px;
+	/*display:block;*/
+	margin:auto;
+	text-align: center;
+
+	margin: 10px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#check_bottom>h2{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+
+	font-size: 24px;
+}
