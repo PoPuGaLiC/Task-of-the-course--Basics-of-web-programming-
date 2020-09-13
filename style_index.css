@@ -107,7 +107,8 @@ input {
 }
 
 #icon{
-	display:block; margin:auto;
+	display:block;
+	margin:auto;
 	filter: invert(100%)
 		drop-shadow(3px 3px 0 #530f09) 
 		drop-shadow(-3px -3px 0 #530f09)
@@ -155,4 +156,96 @@ input {
 	line-height: normal;
 
 	font-size: 24px;
+}
+
+.hotel{
+	width: 200px;
+}
+
+#hotels{
+
+	border: 1px solid rgba(153, 153, 153, 1);
+}
+
+.list{
+	display: grid;
+	height: 100px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1em;
+	align-items: center;
+	
+	padding: 1% 1%;
+}
+
+.description{
+	grid-column: 1/4;
+}
+
+.list>span{
+	display: grid;
+	background: #fff;
+	text-align: center;
+	justify-items: center;
+	grid-template-columns: 2fr 2fr;
+	padding: 10px 10px;
+	border: 1px solid rgba(153, 153, 153, 1);
+
+}
+
+.scroll{
+	height: 300px;
+	/*width: 100%;*/
+	overflow-x: hidden;
+	background: #fff;
+	border: #C1C1C1;
+	overflow-y: scroll;
+	white-space:nowrap;
+    border: solid 1px #ffffff;
+}
+
+.scroll::-webkit-scrollbar-button {
+	background-image:url('');
+	background-repeat:no-repeat;
+	width:10px;
+	height:0px
+}
+
+.scroll::-webkit-scrollbar-track {
+	background-color:#ffffff
+}
+
+.scroll::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	background-color:#C4C4C4;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover{
+	background-color:#a9352c;
+}
+
+.scroll::-webkit-resizer{
+	background-image:url('');
+	background-repeat:no-repeat;
+	width:10px;
+	height:0px
+}
+
+.scroll::-webkit-scrollbar{
+	width: 10px;
+}
+
+.arrow{
+	position: absolute;
+	top: 2000px;
+	cursor: pointer;
+}
+
+.left{
+	left: 1px;
+}
+
+.right{
+	transform: rotate(180deg);
+	right: 1px;
 }
