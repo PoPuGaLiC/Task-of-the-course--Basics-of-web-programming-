@@ -225,6 +225,8 @@ input {
 	position: absolute;
 	top: 50%;
 	cursor: pointer;
+	width: 15%;
+	max-width: 120px;
 }
 
 .left{
@@ -265,4 +267,68 @@ input {
 	color: #ffffff;
 	opacity: 0;
 	z-index: 10;
+}
+
+#attractions{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+
+.circles{
+	display: flex;
+ 	justify-content: center;
+}
+
+.circles>img{
+	margin: 2px;
+	width: 2.5%;
+	max-width: 28px;
+}
+
+.attractions{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	margin: 30px;
+}
+
+.attractions>img{
+	margin: 30px;
+	width: 70%;
+	max-width: 400px;
+	box-shadow: 30px 30px #53110c;
+}
+
+footer{
+	
+	padding: 30px 10px 10px 10px;
+	/*Верх право низ лево*/
+	text-align: left;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #53110c;
+}
+
+footer>span{
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+td{
+	padding: 5px 20px;
+}
+
+th{
+	padding: 5px 20px;
+	font-size: 30px;
+	color: #f55b35;
+}
+
+.contacts>img{
+	padding: 2px;
+	width: 40px;
+}
+
+footer>p{
+	text-align: right;
+	justify-self: right;
 }

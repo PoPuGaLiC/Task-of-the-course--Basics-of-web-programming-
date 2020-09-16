@@ -29,4 +29,3 @@ function switchingRight(){
 	position = ((news.length+position+1))%news.length;
 	switchingNews(position);
 };
-
