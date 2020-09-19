@@ -274,15 +274,18 @@ input {
 	grid-template-columns: repeat(3,1fr);
 }
 
-.circles{
+#circles{
 	display: flex;
  	justify-content: center;
 }
 
-.circles>img{
-	margin: 2px;
-	width: 2.5%;
-	max-width: 28px;
+.circle{
+	margin: 4px;
+	width: 28px;
+	padding: 0;
+	height: 28px;
+	border-radius: 50%;
+	background-color: #facdce;
 }
 
 .attractions{
@@ -308,9 +311,19 @@ footer{
 	background-color: #53110c;
 }
 
-footer>span{
+footer{
 	display: grid;
 	grid-template-columns: auto 1fr;
+}
+
+footer:nth-child(1){
+	text-align: center;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	justify-items: center;
+	align-self: center;
+	align-content: center;
 }
 
 td{
@@ -329,6 +342,8 @@ th{
 }
 
 footer>p{
+	padding: 0px;
+	margin: 0px;
 	text-align: right;
 	justify-self: right;
 }

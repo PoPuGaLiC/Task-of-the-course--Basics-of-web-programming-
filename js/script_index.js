@@ -1,6 +1,7 @@
 let position = 0;
 
 let news = document.getElementsByClassName('news');
+let circles = document.getElementsByClassName('circle');
 switchingNews(position);
 
 function switchingNews(n){
@@ -10,11 +11,14 @@ function switchingNews(n){
 
 function viewNews(n){
 	news[n].style.display = "block";
+	circles[n].style.background = '#53110c';
 };
 
 function hideNews(){
-	for (image of news)
-		image.style.display = "none";
+	for (let i=0;i<news.length;i++){
+		news[i].style.display = "none";
+		circles[i].style.background = '#facdce';
+	}
 };
 
 document.getElementsByClassName('left')[0].onclick = switchingLeft;
@@ -29,3 +33,4 @@ function switchingRight(){
 	position = ((news.length+position+1))%news.length;
 	switchingNews(position);
 };
+
