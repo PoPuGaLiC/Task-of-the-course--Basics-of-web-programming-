@@ -4,6 +4,9 @@ let news = document.getElementsByClassName('news');
 let circles = document.getElementsByClassName('circle');
 switchingNews(position);
 
+document.getElementsByClassName('left')[0].onclick = switchingLeft;
+document.getElementsByClassName('right')[0].onclick = switchingRight;
+
 function switchingNews(n){
 	hideNews();
 	viewNews(n);
@@ -20,9 +23,6 @@ function hideNews(){
 		circles[i].style.background = '#facdce';
 	}
 };
-
-document.getElementsByClassName('left')[0].onclick = switchingLeft;
-document.getElementsByClassName('right')[0].onclick = switchingRight;
 
 function switchingLeft(){
 	position = ((news.length+position-1))%news.length;
