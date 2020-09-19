@@ -250,30 +250,16 @@ input {
 	position: relative;
 }
 
-.news_description::after{
-	height: 140px;
-	content: "";
-	background: rgba(0,0,0,0.8);
-	position:absolute; 
-	bottom: 0px;
+.news_description{
+	padding: 50px;
+	height: 100px;
+	position: absolute;
+	bottom: 3.5px;
+	text-align: center;
 	left: 0px;
 	right: 0px;
-	opacity: 0;
-}
-.news_description:hover::after,
-.news_description:hover::before{
-	opacity: 1;
-	cursor: pointer;
-}
-.news_description::before{
-	content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id ullamcorper dui. Pellentesque id sem augue. Nam pharetra nibh non tellus auctor aliquet. Donec at congue magna. Phasellus ac volutpat ligula. Aenean pulvinar lorem nulla, vitae sollicitudin libero efficitur in. Nulla ornare eros non lorem varius vestibulum. Phasellus auctor mauris sit amet risus sagittis dapibus. Aliquam in lacus arcu. Integer vulputate aliquam maximus.";
-	position: absolute;
-	bottom: 70px;
-	text-align: center;
-	left: 10px;
-	right: 10px;
 	color: #ffffff;
-	opacity: 0;
+	background:  rgba(0, 0, 0, 0.7);
 	z-index: 10;
 }
 
