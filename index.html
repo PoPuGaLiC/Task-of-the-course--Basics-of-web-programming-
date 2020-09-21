@@ -16,19 +16,19 @@
 				<a href="about_us.html">About us</a>
 			</div>
 			<form id="search">
-				<input type="text" placeholder="Type the word...">
+				<input type="text" maxlength=30 placeholder="Type the word...">
 		  		<img id="icon_search" src="./images/icon_search.png" height="35px">
 			</form>
 	</header>
 	<div id="background">
 			<img id = "icon" src="./images/image_1.png" width="450px">
 			<h1>Plan your tour with us!</h1>
-			<div id="main_pushbutton" class="pushbutton"><h2>Create adventure</h2></div>
+			<a href="#filter_hotels"><div id="main_pushbutton" class="pushbutton"><h2>Create adventure</h2></div></a>
 	</div>
 	<div id="filter_hotels">
-		<input type="text" placeholder="From">
-		<input type="text" placeholder="To">
-		<input type="text" placeholder="People">
+		<input type="date" placeholder="From">
+		<input type="date" placeholder="To">
+		<input type="number" min="1" max="8" placeholder="People">
 		<div id="check_pushbutton" class="pushbutton"><h2>Check availabity</h2></div>
 	</div>
 	
@@ -41,7 +41,7 @@
 						<h4>Hotel Martini</h4>
 						from 55 EUR
 					</span>
-					<span class="description">Princeps boutique hotel is located on the top 1 floor of a historic building in...</br></span>
+					<span class="description">Nullam ornare facilisis magna a malesuada. Nulla et ullamcorper neque. Pellentesque at sem ut ante pretium dictum et vitae elit. Suspendisse imperdiet neque erat, et iaculis lacus vulputate pellentesque. Mauris vehicula, magna vel porttitor ultricies, augue lacus condimentum orci, sit amet fringilla arcu nunc a magna.</br></span>
 				</span>
 				<span>
 					<img src="./images/hotel_1.jpg" width="200px">
@@ -49,7 +49,7 @@
 						<h4>Hotel Martini</h4>
 						from 55 EUR
 					</span>
-					<span class="description">Princeps boutique hotel is located on the top 1 floor of a historic building in...</br></span>
+					<span class="description">Sed mattis aliquam nunc sed consectetur. Pellentesque id efficitur enim. Suspendisse imperdiet neque erat, et iaculis lacus vulputate pellentesque. Mauris vehicula, magna vel porttitor ultricies, augue lacus condimentum orci, sit amet fringilla arcu nunc a magna.</br></span>
 				</span>
 				<span>
 					<img src="./images/hotel_1.jpg" width="200px">
@@ -57,7 +57,7 @@
 						<h4>Hotel Martini</h4>
 						from 55 EUR
 					</span>
-					<span class="description">Princeps boutique hotel is located on the top 1 floor of a historic building in...</br></span>
+					<span class="description">Duis blandit ex ut est tristique, ac mattis risus pellentesque. Nam fermentum vehicula ligula vel feugiat. Donec accumsan neque ut ipsum sollicitudin, quis elementum metus fringilla. Pellentesque in gravida lectus, laoreet tempor elit.</br></span>
 				</span>
 				<span>
 					<img src="./images/hotel_1.jpg" width="200px">
@@ -65,7 +65,7 @@
 						<h4>Hotel Martini</h4>
 						from 55 EUR
 					</span>
-					<span class="description">Princeps boutique hotel is located on the top 1 floor of a historic building in...</br></span>
+					<span class="description">In tincidunt volutpat nisi quis egestas. Donec at sagittis ante, non aliquet risus. Aliquam sagittis tristique elit, ac interdum turpis interdum vel.</br></span>
 				</span>
 				<span>
 					<img src="./images/hotel_1.jpg" width="200px">
@@ -73,7 +73,7 @@
 						<h4>Hotel Martini</h4>
 						from 55 EUR
 					</span>
-					<span class="description">Princeps boutique hotel is located on the top 1 floor of a historic building in...</br></span>
+					<span class="description">Donec lobortis vehicula risus in semper. Vivamus dapibus risus in turpis faucibus efficitur. Quisque scelerisque faucibus urna eu finibus. In hac habitasse platea dictumst.</br></span>
 				</span>
 				<span>
 					<img src="./images/hotel_1.jpg" width="200px">
@@ -81,15 +81,15 @@
 						<h4>Hotel Martini</h4>
 						from 55 EUR
 					</span>
-					<span class="description">Princeps boutique hotel is located on the top 1 floor of a historic building in...</br></span>
+					<span class="description">Sed luctus, velit ac luctus tempor, diam ex vulputate dolor, sit amet porta purus nibh sed dui. Donec ut justo sem. Proin et tristique tortor. Etiam cursus mollis ultrices. Nullam vehicula, odio eu malesuada vestibulum, dolor ipsum sodales lorem, eget feugiat augue dolor sed est.</br></span>
 				</span>
 				
 			</div>
 		</div>
 
-	<h3>News</h3>
+	<h3 id="title_news">News</h3>
 	<div id="news">
-	<div class = "news">
+		<div class = "news">
 			<div class="news_description" hidden>Nunc vel est rhoncus, pharetra elit vitae, volutpat urna. Sed dui orci, feugiat vel risus vitae, dapibus mollis est. Aliquam ultrices felis ut finibus tempus. Morbi sollicitudin fringilla ornare. Duis faucibus in elit ut semper. Praesent ut ex in nunc iaculis tempor nec nec arcu. Nam rhoncus cursus ipsum, nec pretium elit tristique non. Nulla vehicula sit amet risus iaculis convallis. Donec tincidunt ipsum in mattis tincidunt. In venenatis ultrices elit, ac vestibulum ante tincidunt nec.</div>
 			<img src="./images/news_0.jpg" width="100%">
 		</div>
@@ -115,7 +115,7 @@
 		<div class="circle"></div>
 		<div class="circle"></div>
 	</div>
-	<h3>Attractions</h3>
+	<h3 id="title_attractions">Attractions</h3>
 	<div id="attractions">
 		<div>
 			<div class="link">
@@ -180,9 +180,9 @@
 		</div>
 		<table>
 			<tr><th>Tour detals</th><th>About us</th><th>Contacts</th></tr>
-			<tr><td>Hotels</td><td>Who are we?</td><td>BestRomeTours@gmail.com</td></tr>
-			<tr><td>Attractions</td><td>Q&A</td><td>265-85-47</td></tr>
-			<tr><td>News</td><td>Techsupport</td><td>Via Marghera, 17, Rome, Italy</td></tr>
+			<tr><td><a href="index.html#filter_hotels">Hotels</a></td><td><a href="about_us.html#title_who_are_we">Who are we?</a></td><td>BestRomeTours@gmail.com</td></tr>
+			<tr><td><a href="index.html#title_news">News</a></td><td><a href="about_us.html#title_q_and_a">Q&A</a></td><td>265-85-47</td></tr>
+			<tr><td><a href="index.html#title_attractions">Attractions</a></td><td><a href="about_us.html#title_techsupport">Techsupport</a></td><td><a href="https://yandex.ru/maps/10445/rome/house/ZUsYcwdjTEcCQFprfXVxc35lYg==/?ll=12.504082%2C41.902210&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=19">Via Marghera, 17, Rome, Italy</a></td></tr>
 		</table>
 		<div class="contacts">
 			<img src="./images/icon_contact_1.jpg">

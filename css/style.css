@@ -6,6 +6,10 @@
 	font-family: Georgia, Sans-serif;
 }
 
+a{
+	text-decoration: none;
+}
+
 h1{
 	text-align: center;
 
@@ -46,6 +50,16 @@ h4{
 	color: #ff5a2f;
 }
 
+#icon{
+	display:block;
+	margin: 10px;
+	filter: invert(100%)
+		drop-shadow(3px 3px 0 #530f09) 
+		drop-shadow(-3px -3px 0 #530f09)
+		drop-shadow(3px -3px 0 #530f09)
+		drop-shadow(-3px 3px 0 #530f09);
+}
+
 header{
 	background-color: #53110c;
 	padding: 10px;
@@ -62,12 +76,12 @@ header{
 	font-weight: bold;
 }
 
-input::-webkit-input-placeholder {
+#search input::-webkit-input-placeholder {
   color: #ff5733; 
   font-style: italic;
 }
 
-input {
+#search input {
   color: white;
 }
 
@@ -116,6 +130,9 @@ footer{
 
 footer>div{
 	text-align: center;
+}
+td>a{
+	color: #ffffff;
 }
 
 td{

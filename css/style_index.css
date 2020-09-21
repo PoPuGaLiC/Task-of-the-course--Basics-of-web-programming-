@@ -39,16 +39,6 @@
 	line-height: normal;
 }
 
-#icon{
-	display:block;
-	margin: 10px;
-	filter: invert(100%)
-		drop-shadow(3px 3px 0 #530f09) 
-		drop-shadow(-3px -3px 0 #530f09)
-		drop-shadow(3px -3px 0 #530f09)
-		drop-shadow(-3px 3px 0 #530f09);
-}
-
 #filter_hotels{
 	background-color: #530f09;
 	display: grid;
@@ -109,12 +99,15 @@
 }
 
 .description{
+	overflow: hidden;
+	width: 90%;
 	grid-column: 1/4;
 	text-align: left;
 	justify-self:  left;
 	font-size: 14px;
 	color: #736361;
 	padding: 4px;
+	text-overflow: ellipsis;
 }
 
 .list>span{

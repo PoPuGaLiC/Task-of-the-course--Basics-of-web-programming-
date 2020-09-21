@@ -1,0 +1,102 @@
+#who_are_we{
+	padding: 1%;
+	display: flex;
+	justify-content: space-around;
+}
+
+#who_are_we>p{
+	color: #807775;
+	font-weight: bold;
+	font-size: 100%;
+	padding: 1%;
+}
+
+#who_are_we>img{
+	font-size: 100%;
+	padding: 1%;
+}
+.text{
+	text-align: left;
+	margin: 0px 2%;
+
+	color:rgba(107, 109, 108, 1);
+	font-size: 18px;
+}
+
+.list{
+	margin: 0px 2%;
+
+	color: rgba(107, 109, 108, 1);
+	font-size: 24px;
+}
+
+.list>span{
+	cursor: pointer;	
+	display: flex;
+	justify-content: space-between;
+}
+
+.list>span:hover{
+	background-color: rgb(237,239,241);
+}
+
+i{
+	color: #53110c;
+	font-size: 36px;
+	margin: 0px 2%;
+}
+
+#email input::-webkit-input-placeholder {
+	
+	color: rgb(237,239,241);
+	font-size: 24px;
+	background-color: rgb(248,227,228);
+	font-weight: bold;
+	color: rgb(188,169,167);
+}
+
+#email i{
+	margin: 7px 4% 7px  0px ;
+}
+
+#email{
+	display: flex;
+	justify-content: space-between;
+	margin: 7px 0px;
+	/*width: 98%;*/
+}
+
+#techsupport input::-webkit-input-placeholder {
+	color: rgb(237,239,241);
+	font-size: 24px;
+	background-color: rgb(248,227,228);
+	font-weight: bold;
+	color: rgb(188,169,167);
+	white-space:pre-line;
+	/*top: 0;*/
+
+}
+
+#techsupport input {
+	width: 95%;
+	font-size: 24px;
+	background-color: rgb(248,227,228);
+	margin: 7px 2%;
+	padding: 5px;
+	text-overflow: ellipsis;
+	overflow:hidden;
+	white-space:pre-line;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+
+}
+
+#email_text{
+	height: 100px;
+	line-height:6;
+}
+
+#email_text input::-webkit-input-placeholder {
+	line-height:6;
+}
