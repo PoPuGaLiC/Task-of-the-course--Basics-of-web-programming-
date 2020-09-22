@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>BestAwesomeTours</title>
 	<link rel="shortcut icon" href="icon.png" type="image/png">
-	
 	<link href="./css/style_about_us.css" rel="stylesheet" type="text/css"/>
 	<link href="./css/style.css" rel="stylesheet" type="text/css"/>
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -21,6 +20,7 @@
 			</form>
 	</header>
 
+
 	<h3 id="title_who_are_we">Who are we?</h3>
 	<div id="who_are_we">
 		<img src="./images/image_1.jpg">
@@ -32,7 +32,7 @@
 	<h3 id="title_q_and_a">Q&A</h3>
 	<div class="list">
 			<span class="question">
-				Вопрос 1
+				Question 1
 				<i class="las la-angle-right"></i>
 			</span>
 
@@ -41,7 +41,7 @@
 			</p>
 
 			<span class="question">
-				Вопрос 2
+				Question 2
 				<i class="las la-angle-right"></i>
 			</span>
 
@@ -50,7 +50,7 @@
 			</p>
 
 			<span class="question">
-				Вопрос 3
+				Question 3
 				<i class="las la-angle-right"></i>
 			</span>
 
@@ -59,7 +59,7 @@
 			</p>
 
 			<span class="question">
-				Вопрос 4
+				Question 4
 				<i class="las la-angle-right"></i>
 			</span>
 
@@ -68,7 +68,16 @@
 			</p>
 
 			<span class="question">
-				Вопрос 5
+				Question 5
+				<i class="las la-angle-right"></i>
+			</span>
+
+			<p class="text" hidden>
+				Nullam non tincidunt libero, sit amet gravida nisi. Sed eget efficitur dui.Vestibulum sit amet ex felis. Integer massa est, congue ut massa ac, egestas pellentesque elit. In ut laoreet neque, sit amet sodales ante.  Cras pharetra neque et mauris dapibus finibus. Duis nec libero dapibus, tristique leo ut, facilisis ligula. Donec non ultrices metus.
+			</p>
+
+			<span class="question">
+				Question 6
 				<i class="las la-angle-right"></i>
 			</span>
 
@@ -81,11 +90,12 @@
 	<div id="techsupport">
 		<p>If you have any problems, please contact us:</p>
 		<div id="email">
-			<input type="text" placeholder="Your email" required maxlength="30">
+			<input type="text" placeholder="Your email" required minlength="5" maxlength="30">
 			<i class="las la-angle-right"></i>
 		</div>
-		<input id="email_text" type="text" placeholder="Your text" required maxlength="800">
+		<textarea maxlength="860" placeholder="Your text" required rows="8" ></textarea>
 	</div>
+
 
 	<footer>
 		<div>
@@ -109,8 +119,6 @@
 		<p></br>© BestRomeTours 2020. All rights reserved.</p>
 	</footer>
 
-	
-	<!-- <script src="./script.js"></script> -->
 	<script src="./js/script_about_us.js"></script>
 </body>
 </html>

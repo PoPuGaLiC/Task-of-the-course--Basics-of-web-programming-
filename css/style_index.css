@@ -1,11 +1,12 @@
-
 #background{
-	width: auto;
-	height: 953px;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	width: auto;
+	height: 953px;
+
 	background-image: url(../images/image_0.png);
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -17,20 +18,24 @@
 	text-align: center;
 	transition-property: box-shadow;
 }
+
 .pushbutton:hover{
 	box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
 	transition-duration: .1s;
 }
 
 #main_pushbutton{
-	cursor: pointer;
-	margin: 10px;
+	display:block;
+
 	width: 380px;
 	height: 60px;
-	background-color: #530f09;
+	margin: 10px;
+
 	border-radius: 6px;
-	display:block;
+
 	text-align: center;
+	cursor: pointer;
+	background-color: #530f09;
 }
 
 #main_pushbutton>h2{
@@ -40,11 +45,12 @@
 }
 
 #filter_hotels{
-	background-color: #530f09;
 	display: grid;
 	grid-template-columns: 2fr 2fr 2fr 3fr;
 	justify-items: center;
 	align-items: center;
+
+	background-color: #530f09;
 }
 
 #filter_hotels input{
@@ -52,26 +58,27 @@
 	max-width: 230px;
 	height: 42px;
 	padding-left: 15px;
+	margin: 15px 20px;
+
 	border-radius: 6px;
 	border: none;
+
 	outline: none;
 	color: black;
-	margin: 15px 20px;
 }
 
 #check_pushbutton{
-	cursor: pointer;
 	width: 320px;
 	height: 42px;
-	background-color: #ff5b2f;
-	border-radius: 6px;
-	/*display:block;*/
 	margin:auto;
-	text-align: center;
 
-	margin: 10px;
+	border-radius: 6px;
+
+	text-align: center;
 	font-weight: bold;
 	color: #ffffff;
+	background-color: #ff5b2f;
+	cursor: pointer;
 }
 
 #check_pushbutton>h2{
@@ -84,67 +91,75 @@
 
 
 #hotels{
-
 	border: 1px solid rgba(153, 153, 153, 1);
 }
 
 .list{
 	display: grid;
-	height: 100px;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1em;
 	align-items: center;
-	
+
+	height: 100px;
 	padding: 1% 1%;
 }
 
 .description{
-	overflow: hidden;
-	width: 90%;
 	grid-column: 1/4;
 	text-align: left;
 	justify-self:  left;
+
+	width: 90%;
+	padding: 4px;
+
 	font-size: 14px;
 	color: #736361;
-	padding: 4px;
 	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
-.list>span{
-	cursor: pointer;
+.list>a>span{
 	display: grid;
-
-	text-align: center;
 	justify-items: left;
 	grid-template-columns: auto 2fr;
-	background: #fff;
+
 	padding: 10px 10px;
+
 	border: 1px solid rgba(153, 153, 153, 1);
+
 	font-size: 22px;
 	font-weight: bold;
-	
-
+	background: #fff;
+	text-align: center;
+	cursor: pointer;
 }
 
-.list>span>span:nth-child(2){
+.list>a>span>span{
+	color: #000000;
+}
+
+.list>a>span>span:nth-child(2){
 	justify-self:  center;
 }
 
 .scroll{
 	height: 360px;
-	overflow-x: hidden;
-	background: #fff;
+
 	border: #C1C1C1;
+    border: solid 1px #ffffff;
+
 	overflow-y: scroll;
 	white-space:nowrap;
-    border: solid 1px #ffffff;
+	overflow-x: hidden;
+	background: #fff;
 }
 
 .scroll::-webkit-scrollbar-button {
+	width:10px;
+	height:0px;
+
 	background-image:url('');
 	background-repeat:no-repeat;
-	width:10px;
-	height:0px
 }
 
 .scroll::-webkit-scrollbar-track {
@@ -152,7 +167,6 @@
 }
 
 .scroll::-webkit-scrollbar-thumb {
-	-webkit-border-radius: 0px;
 	border-radius: 0px;
 	background-color:#C4C4C4;
 }
@@ -162,10 +176,11 @@
 }
 
 .scroll::-webkit-resizer{
+	width:10px;
+	height:0px;
+
 	background-image:url('');
 	background-repeat:no-repeat;
-	width:10px;
-	height:0px
 }
 
 .scroll::-webkit-scrollbar{
@@ -174,10 +189,12 @@
 
 .arrow{
 	position: absolute;
-	cursor: pointer;
 	top: 50%;
+
 	width: 15%;
 	max-width: 120px;
+
+	cursor: pointer;
 }
 
 .left{
@@ -185,8 +202,9 @@
 }
 
 .right{
-	transform: rotate(180deg);
 	right: 1px;
+
+	transform: rotate(180deg);
 }
 
 #news{
@@ -194,16 +212,18 @@
 }
 
 .news_description{
-	padding: 50px;
-	height: 100px;
 	position: absolute;
-	bottom: 3.5px;
-	text-align: center;
 	left: 0px;
 	right: 0px;
+	bottom: 3.5px;
+	z-index: 10;
+
+	padding: 50px;
+	height: 100px;
+
+	text-align: center;
 	color: #ffffff;
 	background:  rgba(0, 0, 0, 0.7);
-	z-index: 10;
 }
 
 #circles{
@@ -212,10 +232,11 @@
 }
 
 .circle{
-	margin: 4px;
-	width: 28px;
-	padding: 0;
 	height: 28px;
+	width: 28px;
+	margin: 4px;
+	padding: 0;
+
 	border-radius: 50%;
 	background-color: #facdce;
 }
@@ -223,21 +244,22 @@
 #attractions{
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
-	margin: 0px 30px 30px 30px;
 	justify-items: center;
 	align-items: center;
+
+	margin: 0px 30px 30px 30px;
 }
 
 #attractions>div{
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+
+	position: relative;
 }
 
 .description_attraction{
-	position: absolute;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -246,17 +268,12 @@
 	justify-items: center;
 	align-items: center;
 
+	position: absolute;
 	z-index: 10;	
 }
 
 .link{
 	display: none;
-	position: absolute;
-	left: 69px;
-	right: 69px;
-	bottom: 30px;
-	height: 322px;
-	background: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	justify-self: center;
 	align-self: center;
@@ -264,47 +281,61 @@
 	align-items: center;
 	justify-content: center;
 	align-content: center;
+
+	position: absolute;
+	left: 69px;
+	right: 69px;
+	bottom: 30px;
+	height: 322px;
 	z-index: 2;
+
+	background: rgba(0, 0, 0, 0.7);
 }
 
 .attraction_link{
-	position: absolute;
 	display: flex;
 	flex-direction: column;
-	/*padding: 51px 55px;*/
 	text-align: center;
 	justify-self: center;
 	align-self: center;
 	justify-items: center;
 	align-items: center;
+
+	position: absolute;
 	
 	
 }
 
 .attraction_link>span{
+	z-index: 3;
+
 	height: 60px;
+	padding: 20px;
+
+	text-align: center;
 	font-size: 30px;
 	font-weight: bold;
-	padding: 20px;
-	text-align: center;
 	color: #ffffff;
-	z-index: 3;
 }
 
 .attraction_arrow{
-	/*cursor: pointer;*/
+	z-index: 5;
+
 	width: 300%;
 	max-width: 120px;
+
 	transform: rotate(180deg);
-	z-index: 5;
 }
 
 .attraction{
-	margin: 30px;
-	width: 70%;
-	max-width: 400px;
-	box-shadow: 30px 30px #53110c;
 	justify-self:center;
 	align-self: center;
+	
 	z-index: 1;
+
+	width: 70%;
+	max-width: 400px;
+	margin: 30px;
+
+	box-shadow: 30px 30px #53110c;
 }
